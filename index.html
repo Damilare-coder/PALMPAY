@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PalmPay | Say yes to more</title>
     <link rel="stylesheet" href="index.css">
-    <link rel="icon" href="/favicon.ico" />
+    <link rel="icon" href="/favicon.ico">
 
 </head>
 
@@ -37,41 +37,57 @@
         </ul>
 
 
-        <div class="flex-items2">
-            <button class="nav-btn"> Log in </button>
 
-        <div class="dropdown">
-            <button class="dropbtn">
-                <img src="./img/NG.png" alt="" width="24"> Nigeria <span><img src="./img/Frame.39a51b59.png" alt="" width="20"></span>
-            </button>
-            <div class="dropdown-content">
-            <p>Select region</p>
-            <a href="#">Option 1</a>
-            <a href="#">Option 2</a>
-            <a href="#">Option 3</a>
+        <div class="flex-items2">
+
+            <button class="nav-btn">Log in</button>
+
+
+            <span>
+                <img src="./img/NG.png" alt="" width="20" class="ng-drop">
+            </span>
+            <span>
+                <img src="./img/Frame.39a51b59.png" alt="" width="18" class="arrow-down">
+            </span>
+
+            <select name="Countries" id="countries-select">
+                <optgroup label="Select Region">
+                    <option value="0">Nigeria</option>
+                    <option value="1">Tanzania</option>
+                    <option value="2">Ghana</option>
+                </optgroup>
+            </select>
+
+
+            <!--  -->
+            <span>
+                <img src="./img/NG.png" alt="" width="20" class="ng-drop">
+            </span>
+            <span>
+                <img src="./img/arrow-up-svgrepo-com.svg" alt="" width="18" class="arrow-up">
+            </span>
+
+            <select name="Countries" id="countries-select-sm">
+                <optgroup label="Select Region">
+                    <option value="0">Nigeria</option>
+                    <option value="1">Tanzania</option>
+                    <option value="2">Ghana</option>
+                </optgroup>
+            </select>
+
+        
+
+            <div class="ham">
+                <img src="./img/menu-duo-lg-svgrepo-com.svg" alt="" width="50">
             </div>
         </div>
-        
-
-        
 
 
-
-        <!--   <select name="Countries" id="countries-select">
-
-                <option value="volvo">Nigeria</option>
-                <option value="Tanzania"> <img src="./img/Flag_of_Tanzania 1.png" alt="">Tanzania</option>
-                <option value="Ghana"> <img src="./img/Ghana.png" alt="">Ghana</option>
-
-            </select> -->
-
-        </div>
-
-        <div class="ham">
-            <img src="./img/menu-duo-lg-svgrepo-com.svg" alt="" width="50">
-        </div>
 
     </section>
+
+
+
 
 
 
