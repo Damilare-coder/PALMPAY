@@ -33,28 +33,23 @@ body {
     width: 100%;
     height: 70px;
     z-index: 10;
-    border: 4px solid red;
 
 }
 
 
 
 
-.flex-items {
+.palm-logo {
     width: 132px;
     height: 32px;
     max-width: 100%;
-    /* margin-right: 160px; */
-    /* border: 3px solid red; */
 }
 
 ul {
     display: flex;
     gap: 50px;
-    /* margin-right: 50px; */
     font-size: 16px;
     list-style: none;
-    /* border: 3px solid red; */
 
 }
 
@@ -110,24 +105,15 @@ ul {
 
 
 
-#countries-select {
-    appearance: none;
-    font-size: 14px;
-    border: none;
-    width: 145px;
-    border-radius: 25px;
-    height: 35px;
-    text-align: left;
-    background-color: #f7f7fb;
-    padding: 4px 0px 4px 40px;
-}
+
 
 
 #countries-select-sm {
+    display: none;
     appearance: none;
-    font-size: 14px;
     border: none;
-    width: 145px;
+    width: 60px;
+    margin-right: 5px;
     border-radius: 25px;
     height: 35px;
     text-align: left;
@@ -135,10 +121,19 @@ ul {
     padding: 4px 0px 4px 40px;
 }
 
-.arrow-up{
+
+.ng-drop-sm{
+    display: none;
     position: relative;
-    left: 125px;
+    left: 48px;
     top: 2px;
+}
+
+.arrow-up-sm{
+    display: none;
+    position: relative;
+    left: 52px;
+    top: px;
 }
 
 
@@ -158,9 +153,14 @@ ul {
 
 .hero-section img {
     margin-top: 100px;
-    /* margin-left:  100px; */
     width: 1130px;
     height: 192px;
+    /* max-width: 100%; */
+
+}
+
+.sm-img{
+    display: none;
 }
 
 .hero-section p {
@@ -223,6 +223,13 @@ ul {
     width: 100%;
 }
 
+
+.about-img-sm{
+    display: none;
+}
+
+
+
 .about-img {
     position: relative;
     bottom: 300px;
@@ -250,6 +257,19 @@ ul {
     padding: 0px 370px 0px 360px;
 }
 
+.content1-img-sm{
+    display: none;
+}
+
+
+.content1-img-lg{
+    width: 1140px;
+    height: 454px;
+}
+
+
+
+
 
 
 .about-content2 h2 {
@@ -265,6 +285,16 @@ ul {
     align-items: center; */
     color: white;
     padding: 0px 390px 0px 380px;
+}
+
+.content2-img-sm{
+    display: none;
+
+}
+
+.content2-img-lg{
+    width: 1140px;
+    height: 454px;
 }
 
 
@@ -479,16 +509,212 @@ footer {
 
 
 @media screen and (max-width: 850px) {
+    
+
+    .flex-container{
+        gap: 120px;
+    }
+
+    .palm-logo{
+        width: 110px;
+        height: 27px;
+    }
+
     ul {
         display: none;
 
     }
 
-    .ham {
-        display: block;
-    }
+    
 
     .nav-btn {
         display: none;
     }
+
+    .ng-drop{
+        display: none;
+        
+    }
+    
+    .arrow-down{
+        display: none;
+        
+    }
+
+    #countries-select {
+        display: none;
+    }
+
+    #countries-select-sm {
+        display: block;
+        appearance: none;
+        border: none;
+        width: 55px;
+        border-radius: 25px;
+        height: 35px;
+        background-color: #f7f7fb;
+        
+    }
+    
+    
+    .ng-drop-sm{
+        position: relative;
+        display: block;
+        top: 0;
+        left: 50px;
+    
+    }
+    
+    .arrow-up-sm{
+        position: relative;
+
+        display: block;
+    
+    }
+    .ham {
+        display: block;
+        /* margin-left: 25px; */
+        
+    }
+
+
+    .hero-section img {
+        margin-top: 70px;
+        width: 360px;
+        height: 70px;
+    }
+    
+    .hero-section p {
+        margin-top: 40px;
+        text-align: center;
+        align-items: center;
+        font-size: 14px;
+        padding: 0px 8px 0px 13px;
+    }
+
+
+    #get-app {
+        display: flex;
+        justify-content: center;
+        margin-left: 0px;
+        margin-top: 30px;
+        align-items: center;
+        gap: 14px;
+    }
+    
+    #google {
+        width: 100px;
+        height: 30px;
+    }
+    
+    #app {
+        width: 100px;
+        height: 30px;
+    }
+    
+    .text {
+        font-size: 11px;
+        margin-left: 25px;
+        margin-top: 15px;
+        display: flex;
+        gap: 10px;
+        text-align: center;
+        align-items: center;
+        color: #868692;
+    }
+
+    .text p{
+        height: 25px;
+    }
+
+
+
+
+    #about {
+        text-align: center;
+        align-items: center;
+        position: relative;
+        margin-top: 275px;
+        background-color: black;
+        background-size: cover;
+        height: 203vh;
+        width: 100%;
+    }
+    
+    
+    .about-img {
+        display: none;
+        
+        /* height: 100vh; */
+    }
+    .about-img-sm{
+        display: block;
+        max-width: 100%;
+        position: relative;
+        bottom: 200px;
+        margin-left: 5px;
+        /* border: 3px solid red; */
+        
+    }
+
+    .about-content1 h1 {
+        text-align: center;
+        position: relative;
+        bottom: 130px;
+        font-size: 24px;
+        color: #d0aefa;
+    }
+    
+    
+    .about-content1 p {
+        position: relative;
+        bottom: 140px;
+        font-size: 14px;
+        padding: 0px 21px 0px 13px;
+    }
+
+    
+    .content1-img-lg{
+        display: none;
+    }
+
+    .content1-img-sm{
+        display: block;
+        max-width: 100%;
+        position: relative;
+        right: 1px;
+        bottom: 180px;
+
+    }
+    
+
+
+    .about-content2 h2 {
+        text-align: center;
+        position: relative;
+        bottom: 230px;
+        font-size: 24px;
+        padding: 0px 25px 0px 5px;
+        color: #ffec9f !important;
+        /* border: 4px solid red; */
+    }
+    
+    .about-content2 p {
+        position: relative;
+        bottom: 235px;
+        font-size: 14px;
+        padding: 0px 21px 0px 13px;
+    }
+    .content2-img-sm{
+        display: block;
+        max-width: 100%;
+        position: relative;
+        bottom: 245px;
+
+    }
+
+    .content2-img-lg{
+        display: none;
+    }
+    
 }
