@@ -509,17 +509,6 @@ footer {
 
 
 @media screen and (max-width: 850px) {
-    
-
-    .flex-container{
-        gap: 120px;
-    }
-
-    .palm-logo{
-        width: 110px;
-        height: 27px;
-    }
-
     ul {
         display: none;
 
@@ -573,8 +562,6 @@ footer {
     }
     .ham {
         display: block;
-        /* margin-left: 25px; */
-        
     }
 
 
@@ -716,5 +703,4 @@ footer {
     .content2-img-lg{
         display: none;
     }
-    
 }
