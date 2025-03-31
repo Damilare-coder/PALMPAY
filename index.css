@@ -549,11 +549,40 @@ ul {
 
 
 
-.users img {
+.user-img-lg {
     position: relative;
-    top: 10px;
+    top: 65px;
 }
 
+.user-img-sm{
+    display: none;
+}
+
+
+.users-app {
+    display: none;
+    display: flex;
+    margin-left: 800px;
+    margin-top: 60px;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    position: relative;
+    bottom: 30px;
+}
+
+.google-app {
+    display: none;
+    /* margin-left: 30px; */
+    width: 120px;
+    height: 48px;
+}
+
+.apple {
+    display: none;
+    width: 157px;
+    height: 48px;
+}
 
 
 
@@ -825,6 +854,9 @@ footer {
     }
 
 
+    .sec-con{
+        margin-bottom: 770px;
+    }
     .security {
         display: none;
     
@@ -929,9 +961,10 @@ footer {
     .contact-sm {
         display: block;
         margin-top: 10px;
-        height: 75vh;
+        height: 45vh;
         position: relative;
         top: 350px;
+        /* margin-bottom: 0px; */
     }
     
     .contact-img-sm {
@@ -995,8 +1028,38 @@ footer {
     
     .content-text2-sm {
         display: block;
-        
+    }
+
+    .user-img-lg{
+        display: none;
+    }
+    .user-img-sm{
+        display: block;
+        max-width: 100%;
+    }
+
+    .users-app {
+        display: none;
+        display: flex;
+        margin-left: 800px;
+        margin-top: 60px;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+        position: relative;
+        bottom: 30px;
+    }
     
+    .google-app {
+        display: none;
+        /* margin-left: 30px; */
+        width: 120px;
+        height: 48px;
+    }
     
+    .apple {
+        display: none;
+        width: 157px;
+        height: 48px;
     }
 }
